@@ -1,0 +1,42 @@
+{
+  "name": "x",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "count": "node scripts/generate-count.js",
+    "watch-blogs": "node scripts/watch-blogs.js",
+    "dev": "next dev --turbopack",
+    "push-db": "npx prisma db push",
+    "generate": "npx prisma generate",
+    "build": "prisma generate && next build",
+    "postinstall": "prisma generate",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.13.0",
+    "@types/pg": "^8.15.5",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "chokidar": "^4.0.3",
+    "gray-matter": "^4.0.3",
+    "next": "15.3.5",
+    "pg": "^8.16.3",
+    "prisma": "^6.13.0",
+    "pusher": "^5.2.0",
+    "pusher-js": "^8.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-syntax-highlighter": "^15.6.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

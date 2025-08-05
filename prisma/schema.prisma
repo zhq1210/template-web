@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// 评论表
+model Comment {
+  id          Int      @id @default(autoincrement())
+  nickname    String?                                    // 昵称（非必填）
+  contact     String?                                    // 联系方式（非必填）
+  content     String                                     // 评论内容（必填）
+  createdAt   DateTime @default(now())                   // 评论时间
+  
+  // 回复功能（可选，支持评论回复）
+  parentId    Int?
+  parent      Comment? @relation("CommentReplies", fields: [parentId], references: [id], onDelete: Cascade)
+  replies     Comment[] @relation("CommentReplies")
+  
+  @@map("comments")
+}
+
+// 点赞表
+model Reaction {
+  id          Int      @id @default(autoincrement())
+  type        String                                     // 点赞类型：like, cheer, celebrate, appreciate, smile
+  count       Int      @default(0)                       // 该类型的点赞总数
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@unique([type])  // 确保每种类型只有一条记录
+  @@map("reactions")
+}
+
+model ChatRoom {
+  id          String    @id @default(cuid())
+  name        String
+  description String?
+  isPrivate   Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  messages    Message[]
+  
+  @@map("chat_rooms")
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  content   String
+  userId    String
+  userName  String
+  userAvatar String?
+  roomId    String
+  room      ChatRoom @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  
+  @@map("messages")
+}
