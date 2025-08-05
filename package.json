@@ -1,7 +1,25 @@
 {
-  "name": "x",
+  "name": "template-web",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "wuxian",
+    "url": "https://github.com/996wuxian"
+  },
+  "license": "MIT",
+  "keywords": [
+    "next.js",
+    "react",
+    "typescript"
+  ],
+  "homepage": "https://github.com/996wuxian/template-web",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/996wuxian/template-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/996wuxian/template-web/issues"
+  },
   "scripts": {
     "count": "node scripts/generate-count.js",
     "watch-blogs": "node scripts/watch-blogs.js",
