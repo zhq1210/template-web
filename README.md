@@ -28,27 +28,91 @@ pnpm 版本: 8.8.0
 
 ## 目录说明
 
-prisma\schema.prisma 是 prisma 的配置文件，用于定义数据库模型。
-public 是静态资源目录，用于存放静态资源。
-scripts 是脚本目录，用于存放脚本。
-service 是请求方法，接口方法。
-src\blogs 存放 md 文件，项目会读取这个目录作为文章列表显示。
-src\components 存放组件, 包含弹窗，热力图等。
-src\contexts\ThemeContext.tsx 是主题上下文，用于切换主题。
-src\lib\prisma.ts 是 prisma 的声明文件。
-src\lib\pusher.ts 是 pusher 的声明文件。
-src\pages_app.tsx 是 Next.js 的入口文件。
-src\pages\index.tsx 首页代码。
-src\pages\works.tsx 作品页面代码。
-src\pages\blog.tsx 文章集页面代码。
-src\pages\chat.tsx 聊天室页面代码。
-src\pages\api\comments.ts 获取评论接口代码。
-src\pages\api\reactions.ts 获取文章点赞数接口代码。
-src\pages\api\chat 聊天室接口代码。
-src\data\works.ts 作品数据。
-src\data\tagConfigs.ts 标签配置数据。
-src\data\experience.ts 经历数据。
-GitHubHeatmap username="996wuxian" year={2025} 热力图只需要在这替换你的 username 即可
+## 目录说明
+
+- `prisma/schema.prisma`
+
+  - Prisma 的配置文件，用于定义数据库模型。
+
+- `public`
+
+  - 静态资源目录，用于存放静态资源。
+
+- `scripts`
+
+  - 脚本目录，用于存放脚本。
+
+- `service`
+
+  - 请求方法，接口方法。
+
+- `src/blogs`
+
+  - 存放 md 文件，项目会读取这个目录作为文章列表显示。
+
+- `src/components`
+
+  - 存放组件，包含弹窗、热力图等。
+
+- `src/contexts/ThemeContext.tsx`
+
+  - 主题上下文，用于切换主题。
+
+- `src/lib/prisma.ts`
+
+  - Prisma 的声明文件。
+
+- `src/lib/pusher.ts`
+
+  - Pusher 的声明文件。
+
+- `src/pages_app.tsx`
+
+  - Next.js 的入口文件。
+
+- `src/pages/index.tsx`
+
+  - 首页代码。
+
+- `src/pages/works.tsx`
+
+  - 作品页面代码。
+
+- `src/pages/blog.tsx`
+
+  - 文章集页面代码。
+
+- `src/pages/chat.tsx`
+
+  - 聊天室页面代码。
+
+- `src/pages/api/comments.ts`
+
+  - 获取评论接口代码。
+
+- `src/pages/api/reactions.ts`
+
+  - 获取文章点赞数接口代码。
+
+- `src/pages/api/chat`
+
+  - 聊天室接口代码。
+
+- `src/data/works.ts`
+
+  - 作品数据。
+
+- `src/data/tagConfigs.ts`
+
+  - 标签配置数据。
+
+- `src/data/experience.ts`
+
+  - 经历数据。
+
+- GitHubHeatmap 使用说明：
+  - `GitHubHeatmap username="996wuxian" year={2025}`
+  - 热力图只需要在这替换你的 username 即可
 
 ## vercel 部署说明
 
