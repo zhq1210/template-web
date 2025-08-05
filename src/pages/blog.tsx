@@ -729,7 +729,7 @@ export default function Blog() {
             {/* 主要内容区域 - 左右布局 */}
             <div className="max-w-7xl mx-auto flex gap-4 h-[80vh]">
               {/* 左侧分类面板 */}
-              <div className="w-64 sticky top-54 h-fit hidden sm:block">
+              <div className="w-64 sticky top-45 h-fit hidden sm:block">
                 <div className="bg-[rgba(0,0,0,.3)] rounded-lg p-4 border border-[rgba(255,255,255,.1)]">
                   <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
                     <SvgIcon name="tag" width={20} height={20} color="#fff" />
@@ -828,7 +828,7 @@ export default function Blog() {
 
                 <div
                   ref={blogContentRef}
-                  className="grid gap-3 max-h-[70vh] overflow-auto custom-scrollbar blog-content relative"
+                  className="grid gap-3 max-h-[70vh] overflow-auto custom-scrollbar blog-content relative pb-20"
                 >
                   {filteredArticles.map((article) => (
                     <div
@@ -893,7 +893,7 @@ export default function Blog() {
               </div>
 
               {/* 右侧统计面板 */}
-              <div className="w-80 sticky top-54 h-fit hidden lg:block">
+              <div className="w-80 sticky top-49 h-fit hidden lg:block">
                 <div className="bg-[rgba(0,0,0,.3)] rounded-lg p-3 border border-[rgba(255,255,255,.1)]">
                   <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
                     <SvgIcon name="count" width={20} height={20} color="#fff" />
