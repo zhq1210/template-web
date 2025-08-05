@@ -79,4 +79,5 @@ GitHubHeatmap username="996wuxian" year={2025} 热力图只需要在这替换你
 ## 注意
 
 1. 如果修改表结构，则需要重新运行 `pnpm run push-db` 命令，将数据库结构推送到 neon 上
-2. 如果遇到不懂的，请在 qq 群内联系我: 916088073
+2. 上传到您的 github 仓库时，请将.env 文件添加到.gitignore 文件中
+3. 如果遇到不懂的，请在 qq 群内联系我: 916088073
