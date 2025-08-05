@@ -1,4 +1,4 @@
-<p align="center"><img src="/public/favicon.ico" /></p>
+<p align="center"><img src="/public/images/work1.jpg" /></p>
 
 <h1 align="center">template-web</h1>
 
