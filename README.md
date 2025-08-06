@@ -7,9 +7,9 @@ This template should help get you started developing with React in Next.js.
 这个模板应该有助于你开始在 Next.js 中使用 React 进行开发。
 
 > [!NOTE]
-> If you think `TemplateElectron` is helpful to you, or you like my project, please give my project a ⭐️ on GitHub. Your support is the driving force for me to continue to improve! Thank you for your support! If there are any areas that are not good enough, please raise an issue and I will improve it!
+> If you think `TemplateWeb` is helpful to you, or you like my project, please give my project a ⭐️ on GitHub. Your support is the driving force for me to continue to improve! Thank you for your support! If there are any areas that are not good enough, please raise an issue and I will improve it!
 > <br>
-> 如果你认为 TemplateElectron 对你有帮助，或者你喜欢我的项目，请给我的项目一个 ⭐️ 在 GitHub 上。您的支持是我不断改进的动力！感谢您的支持！如果有什么地方不够好，请提出 issue，我会改进的！
+> 如果你认为 TemplateWeb 对你有帮助，或者你喜欢我的项目，请给我的项目一个 ⭐️ 在 GitHub 上。您的支持是我不断改进的动力！感谢您的支持！如果有什么地方不够好，请提出 issue，我会改进的！
 
 ## Introduction
 
