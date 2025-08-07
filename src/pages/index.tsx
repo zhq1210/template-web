@@ -197,7 +197,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>首页 - wuxian&apos;s web web</title>
+        <title>首页 - wuxian&apos;s web</title>
         <meta name="description" content="wuxian的个人网站首页" />
       </Head>
       <div className="relative">
