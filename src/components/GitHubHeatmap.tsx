@@ -181,7 +181,7 @@ const GitHubHeatmap: React.FC<GitHubHeatmapProps> = ({ username, year }) => {
           {totalContributions} contributions in {year}
         </p>
         <p className="text-[12px] text-[rgba(255,255,255,0.7)]">
-          68 次提交在 2025年
+          {totalContributions} 次提交在 2025年
         </p>
       </div>
 
