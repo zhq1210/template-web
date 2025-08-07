@@ -59,7 +59,7 @@ export default function Home() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const fullText = "Hello, I'm wuxian";
+  const fullText = "Hello, I'm jack";
 
   // 打字机动画效果
   useEffect(() => {
