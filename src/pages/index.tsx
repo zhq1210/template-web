@@ -197,8 +197,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>首页 - wuxian&apos;s web</title>
-        <meta name="description" content="wuxian的个人网站首页" />
+        <title>首页 - jack&apos;s web</title>
+        <meta name="description" content="jack的个人网站首页" />
       </Head>
       <div className="relative">
         {/* 弹窗组件 */}
